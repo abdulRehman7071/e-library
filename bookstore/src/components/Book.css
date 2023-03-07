@@ -1,0 +1,154 @@
+.booksCollections {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 1rem;
+    flex-wrap: wrap;
+
+}
+
+body {
+    background-color: #122454;
+    color: white;
+}
+
+
+.card {
+    padding: 2rem;
+    border-radius: 10px;
+    max-height: 320px;
+
+    align-items: center;
+
+
+}
+
+
+.imgContainer,
+.cardDetails {
+    width: 150px;
+    height: 200px;
+
+}
+
+.cardDetails {
+    margin-top: 1rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 10px #ccc;
+}
+
+.cardDetails>p,
+h2,
+article {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+form {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1rem;
+
+}
+
+.cardDetails>h3 {
+    width: 100%;
+}
+
+form>div {
+    width: 100%;
+}
+
+form,
+label,
+input {
+    display: flex;
+    flex-direction: column;
+
+}
+
+input,
+label {
+    width: 90%;
+    padding: 0.5rem;
+    font-size: 1rem
+}
+
+input {
+
+    border-radius: 5px;
+    border: 0.5px solid rgba(0, 0, 0, 1);
+}
+
+form>h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: 5px;
+}
+
+
+button {
+    padding: 0.7rem 3rem;
+    margin: 10px 0;
+    background-color: white;
+    border-radius: 10px;
+    color: #122454;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* input[type="checkbox"] {
+    width: 4rem;
+    margin-top: 1rem;
+    display: inline;
+} */
+.availableBox {
+    display: flex;
+    align-items: center;
+}
+
+.availableBox>input {
+    width: 1rem;
+}
+
+
+@media screen and (max-width: 500px) {
+    .card {
+        max-height: 450px;
+        width: 100%;
+    }
+
+    .imgContainer,
+    .cardDetails {
+        width: 220px;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    form {
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        width: 70%;
+    }
+}
